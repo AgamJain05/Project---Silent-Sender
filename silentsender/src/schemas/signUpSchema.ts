@@ -13,7 +13,3 @@ export const signUpSchema = z.object({
     password: z.string().min(8, {message: 'Password Should be minimum 8 characters long'}),
   });
 
-export const signInSchema = z.object({
-    username: usernameValidation,
-    password: z.string().min(8, {message: 'Password Should be minimum 8 characters long'}),
-  });

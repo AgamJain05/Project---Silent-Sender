@@ -21,5 +21,7 @@ async function dbConnect(): Promise<void>{
     }
     catch(error){
         console.error(" Error occured while establishing connection" ,error);
+
+        process.exit(1);
     }
 }
